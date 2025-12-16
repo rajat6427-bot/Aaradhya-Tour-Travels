@@ -60,7 +60,7 @@ function Section() {
         <h1 ref={txt} className=" font-bogle  font-bold p-5 md:p-10 text-xl text-center md:text-5xl text-black">Book for Destinations in Varanasi</h1>
 
         <div className=" flex items-center h-full w-full justify-center mt-10 ">
-          <div className=" h-full w-[90%] grid grid-cols-1 place-items-center md:grid-cols-3 justify-center gap-3">
+          <div className=" h-full w-[90%] grid grid-cols-1 place-items-center md:grid-cols-2 xl:grid-cols-3 justify-center gap-3">
 
             <Dcard url={"Kashi"} name={"Kashi Vishwanath Temple"} des={"Visit the sacred temple dedicated to Lord Shiva in the heart of Varanasi."} />
             <Dcard url={"Sarnath"} des={"Perfect for a half-day or full-day trip from Varanasi, Sarnath offers a serene escape and a glimpse into India's rich cultural heritage."} name={"Sarnath"} />
