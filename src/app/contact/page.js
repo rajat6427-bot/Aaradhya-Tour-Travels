@@ -15,11 +15,12 @@ const Contact = () => {
 
   const searchParams = useSearchParams();
 
+  // mark component as mounted
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // Only use searchParams after mount
+  // Only read searchParams after mount
   useEffect(() => {
     if (mounted) {
       setCar(searchParams?.get('car'));
