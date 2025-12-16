@@ -6,17 +6,16 @@ import Footer from "../../../components/Footer";
 import Nav from "../../../components/Nav";
 import Side from "../../../components/Side";
 
-import { useSearchParams } from 'next/navigation';
-
 const Contact = () => {
   const [open, setOpen] = useState(false);
-  const [car, setCar] = useState(null); // move car to state
-  const searchParams = useSearchParams();
+  const [car, setCar] = useState(null);
 
-  // safe: run only in browser
   useEffect(() => {
+    // Dynamically import next/navigation and call useSearchParams inside browser
+    const { useSearchParams } = require('next/navigation');
+    const searchParams = useSearchParams();
     setCar(searchParams.get('car'));
-  }, [searchParams]);
+  }, []);
 
   return (
     <>
