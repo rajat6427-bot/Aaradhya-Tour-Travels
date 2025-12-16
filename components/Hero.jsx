@@ -60,7 +60,7 @@ export default function Hero() {
   return (
     <>
       <br />
-      <section className=" mt-17 flex-col  w-full h-[129vh] md:h-[140vh] lg:h-[145vh]   overflow-hidden flex items-center justify-center">
+      <section className=" mt-17 flex-col  w-full h-[115vh] md:h-[140vh] lg:h-[145vh]   overflow-hidden flex items-center justify-center">
 
         <div className="relative flex-col  flex items-center justify-center h-full w-full">
           {/* Overlay Text */}
@@ -123,3 +123,4 @@ export default function Hero() {
     </>
   );
 }
+
