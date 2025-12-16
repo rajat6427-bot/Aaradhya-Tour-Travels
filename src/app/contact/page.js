@@ -6,16 +6,25 @@ import Footer from "../../../components/Footer";
 import Nav from "../../../components/Nav";
 import Side from "../../../components/Side";
 
+import { useSearchParams } from 'next/navigation';
+
 const Contact = () => {
   const [open, setOpen] = useState(false);
   const [car, setCar] = useState(null);
+  const [mounted, setMounted] = useState(false); // ✅ check if component mounted
 
-  // ⚡ Dynamically import useSearchParams only in browser
+  const searchParams = useSearchParams();
+
   useEffect(() => {
-    const { useSearchParams } = require('next/navigation');
-    const searchParams = useSearchParams();
-    setCar(searchParams?.get('car'));
+    setMounted(true);
   }, []);
+
+  // Only use searchParams after mount
+  useEffect(() => {
+    if (mounted) {
+      setCar(searchParams?.get('car'));
+    }
+  }, [mounted, searchParams]);
 
   return (
     <>
