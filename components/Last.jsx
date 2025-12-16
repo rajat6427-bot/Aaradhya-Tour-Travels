@@ -9,7 +9,7 @@ const Last = () => {
                 className="
           relative bg-black overflow-hidden
           w-full lg:w-[95%]
-          rounded-none lg:rounded-[40px]
+          rounded-[40px]
         "
             >
                 {/* GRID BACKGROUND */}
@@ -65,5 +65,6 @@ const Last = () => {
         </div>
     );
 };
+
 
 export default Last;
