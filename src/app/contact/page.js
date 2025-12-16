@@ -1,21 +1,18 @@
 "use client"
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
 import Footer from "../../../components/Footer";
 import Nav from "../../../components/Nav";
 import Side from "../../../components/Side";
 
+import { useSearchParams } from 'next/navigation';
+
 const Contact = () => {
   const [open, setOpen] = useState(false);
-  const [car, setCar] = useState(null);
 
-  useEffect(() => {
-    // Dynamically import next/navigation and call useSearchParams inside browser
-    const { useSearchParams } = require('next/navigation');
-    const searchParams = useSearchParams();
-    setCar(searchParams.get('car'));
-  }, []);
+  const searchParams = useSearchParams(); // ✅ hook called at top level
+  const car = searchParams?.get('car');   // safe to use directly
 
   return (
     <>
