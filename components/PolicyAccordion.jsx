@@ -18,7 +18,7 @@ function PolicyAccordion(){
           * Rental Conditions
         </p>
 
-        <h2 className="text-4xl font-bold text-black mb-12">
+        <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-black mb-12">
           Policies and agreement
         </h2>
 
@@ -85,4 +85,5 @@ function PolicyAccordion(){
     </section>
      )
 }
+
 export default PolicyAccordion
