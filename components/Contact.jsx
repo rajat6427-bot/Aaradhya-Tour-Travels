@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
-import Footer from "../../../components/Footer";
-import Nav from "../../../components/Nav";
-import Side from "../../../components/Side";
+import Footer from "./Footer";
+import Nav from "./Nav";
+import Side from "./Side";
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
@@ -137,3 +137,4 @@ const SocialIcon = ({ link, children }) => (
 );
 
 export default Contact;
+
