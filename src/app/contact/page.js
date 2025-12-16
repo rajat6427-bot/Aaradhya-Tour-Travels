@@ -1,16 +1,22 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
 import Footer from "../../../components/Footer";
 import Nav from "../../../components/Nav";
 import Side from "../../../components/Side";
 
 import { useSearchParams } from 'next/navigation';
+
 const Contact = () => {
   const [open, setOpen] = useState(false);
+  const [car, setCar] = useState(null); // move car to state
   const searchParams = useSearchParams();
-  const car = searchParams.get('car'); // get the car name from URL
+
+  // safe: run only in browser
+  useEffect(() => {
+    setCar(searchParams.get('car'));
+  }, [searchParams]);
 
   return (
     <>
@@ -68,7 +74,6 @@ const Contact = () => {
               const phone = e.target[3].value.trim();
               const message = e.target[4].value.trim();
 
-              // Validate first name and last name
               if (!firstName || !lastName) {
                 alert("Please fill in both First Name and Last Name before sending.");
                 return;
@@ -113,7 +118,6 @@ const Contact = () => {
         </div>
       </div>
       
-
       <footer>
         <Footer />
       </footer>
