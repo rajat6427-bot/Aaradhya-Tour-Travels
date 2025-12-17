@@ -56,23 +56,37 @@ function Section() {
   return (
     <div className="   w-full max-w-screen flex items-center justify-center  bg-white mt-10  ">
       <div className=" w-full h-full py-10 text-center flex items-center justify-center lg:w-[95%] bg-[#FFF8F6] rounded-[3rem] flex-col ">
-        <h1  className=" text-[1rem] md:text-xl font-bold text-[#FF3600]"><i className="fa-solid fa-asterisk text-xl font-bold text-[#FF3600]"></i> Our Services</h1>
+        <h1 className=" text-[1rem] md:text-xl font-bold text-[#FF3600]"><i className="fa-solid fa-asterisk text-xl font-bold text-[#FF3600]"></i> Our Services</h1>
         <h1 ref={txt} className=" font-bogle  font-bold p-5 md:p-10 text-xl text-center md:text-5xl text-black">Book for Destinations in Varanasi</h1>
 
         <div className=" flex items-center h-full w-full justify-center mt-10 ">
           <div className=" h-full w-[90%] grid grid-cols-1 place-items-center md:grid-cols-2 xl:grid-cols-3 justify-center gap-3">
 
             <Dcard url={"Kashi"} name={"Kashi Vishwanath Temple"} des={"Visit the sacred temple dedicated to Lord Shiva in the heart of Varanasi."} />
-            <Dcard url={"Sarnath"} des={"Perfect for a half-day or full-day trip from Varanasi, Sarnath offers a serene escape and a glimpse into India's rich cultural heritage."} name={"Sarnath"} />
-            <Dcard url={"Airport"} des={"Comfortable and timely taxi transfers to and from Lal Bahadur Shastri Airport. Hassle-free rides for a smooth journey."} name={"Varanasi Airport"} />
-            <Dcard url={"Ghat"} des={"Enjoy the vibrant riverside, sunrise rituals, and serene boat rides at the southern end of Varanasi."} name={"Assi Ghat"} />
-            <Dcard url={"Fort"} des={"Discover historic architecture and museums along the Ganges at this 17th-century fort."} name={"Ramnagar Fort"} />
-            <Dcard url={"BHU"} des={"Explore the historic campus, temples, and peaceful surroundings."} name={"Banaras Hindu University"} />
-
+            <Dcard url={"Sarnath"} des={"A peaceful Buddhist site where Lord Buddha gave his first sermon."} name={"Sarnath"} />
+            <Dcard url={"Airport"} des={"Reliable taxi transfers to and from Lal Bahadur Shastri Airport."} name={"Varanasi Airport"} />
+            <Dcard url={"Ghat"} des={"Famous for sunrise rituals, Ganga aarti, and boat rides."} name={"Assi Ghat"} />
+            <Dcard url={"Fort"} des={"A historic 17th-century fort and museum along the Ganges."} name={"Ramnagar Fort"} />
+            <Dcard url={"BHU"} des={"A vast historic campus with temples and peaceful surroundings."} name={"Banaras Hindu University"} />
+            <Dcard
+              url={"Ayodhya"}
+              name={"Ayodhya Ram Mandir"}
+              des={"The sacred birthplace of Lord Rama and a major pilgrimage site."}
+            />
+            <Dcard
+              url={"Prayag"}
+              name={"Triveni Sangam, Prayagraj"}
+              des={"The holy confluence of the Ganga, Yamuna, and Saraswati rivers."}
+            />
+            <Dcard
+              url={"Bodh"}
+              name={"Bodh Gaya"}
+              des={"Home to the Mahabodhi Temple where Buddha attained enlightenment."}
+            />
           </div>
         </div>
       </div>
-    
+
     </div>
   )
 }
