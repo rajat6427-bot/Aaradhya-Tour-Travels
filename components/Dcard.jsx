@@ -6,7 +6,7 @@ function Dcard({ url, name, des }) {
       <figure className="brightness-200 relative w-full h-full">
         <Image
           src={`/${url}.jpg`}
-          alt="Shoes"
+          alt="Img"
           fill
           className="object-cover"
           priority
@@ -21,3 +21,4 @@ function Dcard({ url, name, des }) {
 }
 
 export default Dcard;
+
