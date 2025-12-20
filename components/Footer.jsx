@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="relative w-full lg:w-[95%] rounded-none lg:rounded-[40px] overflow-hidden">
 
         {/* Background Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-[#0f0f0f] to-black"></div>
+        <div  className="absolute inset-0 bg-gradient-to-br  from-black via-[#0f0f0f] to-black"></div>
 
         {/* Glow Effects */}
         <div className="absolute top-10 left-10 w-32 h-32 bg-orange-500/20 rounded-full blur-3xl"></div>
@@ -43,10 +43,10 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className=" cursor-pointer space-y-2 text-gray-400">
-                <li><Link href="/">Home</Link></li>
-                <li><Link href="/about">About Us</Link></li>
-                <li><Link href="/contact">Contact Us</Link></li>
-                <li><Link href="/rent">Rent a Car</Link></li>
+                <li><Link className="hover:text-[#FF3600]/80 transition-all" href="/">Home</Link></li>
+                <li><Link className="hover:text-[#FF3600]/80 transition-all" href="/about">About Us</Link></li>
+                <li><Link className="hover:text-[#FF3600]/80 transition-all" href="/contact">Contact Us</Link></li>
+                <li><Link className="hover:text-[#FF3600]/80 transition-all" href="/rent">Rent a Car</Link></li>
               </ul>
             </div>
 
