@@ -22,6 +22,7 @@ import Footer from "../../../components/Footer";
 import AboutTab from "../../../components/AboutTab";
 import PolicyAccordion from "../../../components/PolicyAccordion";
 import Last from "../../../components/Last";
+import AboutSeoContent from "../../../components/AboutSeoContent";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -161,6 +162,8 @@ export default function page() {
     </section>
 
     <AboutTab/>
+
+    <AboutSeoContent/>
 
     <PolicyAccordion/>
 
