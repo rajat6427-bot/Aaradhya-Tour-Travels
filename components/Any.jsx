@@ -66,7 +66,7 @@ export default function Any() {
 
   return (
     <section id="domestic" className="flex flex-col items-center justify-center bg-white py-20">
-      <div className="lg:w-[95%] px-2 md:px-10 flex items-center py-20 md:py-30 flex-col bg-[#FFF8F6] rounded-[3rem]">
+      <div className="lg:w-[95%] w-full px-2 md:px-10 flex items-center py-20 md:py-30 flex-col bg-[#FFF8F6] rounded-[3rem]">
         <h1 className="text-[1rem] md:text-xl font-bold text-[#FF3600]">
           <i className="fa-solid fa-asterisk text-xl font-bold text-[#FF3600]"></i> Our Fleets
         </h1>
@@ -98,4 +98,5 @@ export default function Any() {
     </section>
   );
 }
+
 
