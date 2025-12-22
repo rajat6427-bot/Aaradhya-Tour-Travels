@@ -61,6 +61,21 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/logo.png" sizes="any" />
         <link rel="apple-touch-icon" href="/logo.png" />
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SBQTX18BJ9"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SBQTX18BJ9');
+  `}
+        </Script>
+
       </head>
 
       <body
@@ -69,8 +84,8 @@ export default function RootLayout({ children }) {
         {children}
         <Cursor />
         <SmoothScroll />
-        <Whatsapp/>
-        <Call/>
+        <Whatsapp />
+        <Call />
 
         {/* ✅ JS version of Font Awesome (always works) */}
         <Script
