@@ -79,7 +79,7 @@ export default function Hero() {
             <h1 className="font-ubuntu font-medium text-center  text-xl  text-white drop-shadow-lg mt-10">Reliable and affordable car rentals for weekends, business trips, or daily rides. Book your car today!</h1>
 
             <div className=" lg:mt-32 relative z-[9999] w-32 h-8 flex items-center justify-center">
-              <Link  className=" mt-32 md:mt-96 lg:mt-56  absolute z-[9999]" href="/contact"><button onMouseEnter={() => window.cursor?.enter()}
+              <Link  className=" mt-32 md:mt-96 lg:mt-72  absolute z-[9999]" href="/contact"><button onMouseEnter={() => window.cursor?.enter()}
                 onMouseLeave={() => window.cursor?.leave()} className=" active:bg-black h-14 w-44 rounded-2xl bg-[#FF3600] cursor-pointer hover:bg-black transition-all ease-in-out flex items-center justify-center">
                 <h1 className=" font-semibold text-white">Book Now</h1>
               </button>
@@ -123,4 +123,5 @@ export default function Hero() {
     </>
   );
 }
+
 
