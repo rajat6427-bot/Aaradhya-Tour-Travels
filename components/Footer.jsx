@@ -23,7 +23,7 @@ const Footer = () => {
             {/* Brand */}
             <div>
               <h2 className="text-2xl font-bold">
-            <span className="text-[#FF3600]">ARADHYA TOURS</span> AND TRAVELS
+            <span className="text-[#FF3600]">ARADHYA TOUR</span> AND TRAVELS
           </h2>
               <p className="text-gray-400 mt-4">
                 Experience the comfort and reliability of traveling with Aaradhya Tour & Travels.
@@ -110,3 +110,4 @@ const SocialIcon = ({ link, children }) => {
 };
 
 export default Footer;
+
