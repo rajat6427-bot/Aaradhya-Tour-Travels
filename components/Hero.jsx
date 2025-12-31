@@ -68,7 +68,7 @@ export default function Hero() {
             ref={textRef}
             className="absolute inset-0  h-fit flex flex-col justify-center items-center  md:justify-start top-20 md:top-30 z-20"
           >
-            <h1 className=" text-[1rem] md:text-xl font-bold text-[#FF3600]"><i className="fa-solid fa-asterisk text-xl font-bold text-[#FF3600]"></i>  Welcome To Aaradhya Tours & Travels</h1>
+            <h1 className=" text-[1rem] md:text-xl font-bold text-[#FF3600]"><i className="fa-solid fa-asterisk text-xl font-bold text-[#FF3600]"></i>  Welcome To Aaradhya Tour & Travels</h1>
             <h1 className=" font-ubuntu font-semibold  text-3xl md:text-4xl lg:text-7xl text-white drop-shadow-lg mt-10">
               Affordable Car Rentals
             </h1>
@@ -123,5 +123,6 @@ export default function Hero() {
     </>
   );
 }
+
 
 
