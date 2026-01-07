@@ -19,6 +19,9 @@ export const metadata = {
     "Book reliable car rental services in Varanasi with Aaradhya Tour & Travels.Airport transfers, chauffeur-driven cars, business travel & outstation taxis at best prices.",
   keywords: [
     "car rental in varanasi",
+    "aaradhya tour and travels",
+    "aaradhyatourandtravels",
+    "aaradhya tours and travels",
     "taxi service in varanasi",
     "cab booking varanasi",
     "airport taxi varanasi",
