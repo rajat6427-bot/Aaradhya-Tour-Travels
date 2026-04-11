@@ -107,7 +107,7 @@ export default function Hero() {
                 className="object-cover brightness-40 h-full w-full pointer-events-none lg:rounded-[3rem] "
 
               />
-              <div className=" bg-white z-[99999] flex absolute bottom-0 md:bottom-10  lg:rounded-[3rem] h-fit  w-fit">
+              <div className=" z-[99999] flex absolute bottom-0 md:bottom-10  lg:rounded-[3rem] h-fit  w-fit">
 
                 <Form />
 
