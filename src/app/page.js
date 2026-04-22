@@ -1,6 +1,4 @@
-"use client"
 
-import { useState } from "react";
 import Footer from "../../components/Footer";
 import Form from "../../components/Form";
 import Any from "../../components/Any";
@@ -18,10 +16,11 @@ import Section from "../../components/Section";
 import PolicyAccordion from "../../components/PolicyAccordion";
 import PolicyMain from "../../components/PolicyMain";
 import HomeSeoContent from "../../components/HomeSeoContent";
+import NavContainer from "../../components/NavContainer";
 
 
 export default function Home() {
-  const [open, setOpen] = useState(false);
+
 
   return (
     <section className=" w-full">
@@ -60,8 +59,7 @@ export default function Home() {
 
 
       <header>
-        <Nav open={open} setOpen={setOpen} />
-        <Side open={open} setOpen={setOpen} />
+        <NavContainer/>
       </header>
 
       <main>
