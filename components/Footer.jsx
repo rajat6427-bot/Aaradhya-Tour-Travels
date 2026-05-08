@@ -33,11 +33,11 @@ const Footer = () => {
             {/* Legal Policy */}
             <div className=" flex flex-col gap-2">
               <h3 className="text-lg font-semibold mb-4">Links</h3>
-            
-                <Link href="/car-rental-in-varanasi">Car Rental in Varanasi</Link>
-                <Link href="/taxi-service-in-varanasi">Taxi Service</Link>
-                <Link href="/airport-taxi-varanasi">Airport Taxi</Link>
-            
+
+              <Link href="/car-rental-in-varanasi">Car Rental in Varanasi</Link>
+              <Link href="/taxi-service-in-varanasi">Taxi Service</Link>
+              <Link href="/airport-taxi-varanasi">Airport Taxi</Link>
+
             </div>
 
             {/* Quick Links */}
@@ -77,6 +77,13 @@ const Footer = () => {
               © 2025 Aaradhya Tour & Travels. All rights reserved.
             </p>
 
+            <p className="text-gray-400">
+              Website designed & developed by <br/>
+              <a className=" text-orange-500 underline" href="https://www.linkedin.com/in/kartikey-pathakb580297/" target="_blank" rel="noopener">
+                Kartikey Pathak
+              </a>
+            </p>
+
             <div className="flex gap-4">
               <SocialIcon link="https://www.youtube.com">
                 <FaYoutube />
@@ -84,7 +91,7 @@ const Footer = () => {
               <SocialIcon link="https://www.facebook.com">
                 <FaFacebookF />
               </SocialIcon>
-              <SocialIcon link="https://www.instagram.com">
+              <SocialIcon link="https://www.instagram.com/aaradhyatourandtravels/">
                 <FaInstagram />
               </SocialIcon>
             </div>
